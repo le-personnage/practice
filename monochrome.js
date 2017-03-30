@@ -1,5 +1,4 @@
 //画像モノクロ化プログラム
-//週刊アスキー参照
 
 var canvas, context;
 var img = new Image();
