@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="monochrome.css">
+    <script type="text/javascript" src="monochrome.js"></script>
+    <title>monochrome</title>
+  </head>
+  <body onload="initCanvas()">
+    <p>モノクロ加工</p>
+    <hr>
+    <canvas id="monochrome"></canvas>
+    <form>
+      画像ファイルを選択
+      <input type="file" accept="image/jpeg, image/png" onchange="loadPicture(this);">
+      <br>
+      <input type="radio" id="reset" name="monoType" value="0" onchange="draw()" checked>元画像
+      <input type="radio" id="set1" name="monoType" value="1" onchange="draw()">モノクロ加工（RGB平均）
+      <input type="radio" id="set2" name="monoType" value="2" onchange="draw()">モノクロ加工（輝度計算）
+      <br>
+      R:<input type="range" id="red" value="255" min="0" max="255" onchange="draw()">
+      G:<input type="range" id="green" value="255" min="0" max="255" onchange="draw()">
+      B:<input type="range" id="blue" value="255" min="0" max="255" onchange="draw()">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+canvas {
+  width: 640px;
+  height: 480px;
+  border: thin solid #CCCCCC;
+
+}
+form {
+  padding: 10px;
+  line-height: 150%;
+  width: 620px;
+  background-color: #CCCCCC;
+}
+[type="range"] {width: 180px}
